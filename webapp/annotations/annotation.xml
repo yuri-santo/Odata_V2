@@ -50,15 +50,15 @@
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="NAME"/>
-                            <PropertyValue Property="Label" String="{i18n>Nome}"/>
+                            <PropertyValue Property="Label" String="Nome"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="DEPARTMENT"/>
-                            <PropertyValue Property="Label" String="{i18n>Departamento}"/>
+                            <PropertyValue Property="Label" String="Departamento"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="SALARY"/>
-                            <PropertyValue Property="Label" String="{i18n>Salario}"/>
+                            <PropertyValue Property="Label" String="Salario"/>
                         </Record>
                     </Collection>
                 </Annotation>
