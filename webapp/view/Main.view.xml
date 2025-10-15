@@ -15,7 +15,7 @@
 					<FlexItemData id="_IDGenFlexItemData" shrinkFactor="0"/>
 				</smartFilterBar:layoutData>
 			</smartFilterBar:SmartFilterBar>
-			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="FuncionarioSet" smartFilterId="smartFilterBar" tableType="ResponsiveTable" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Line Items" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding"  editTogglable="true" app:useSmartToggle="true">
+			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="FuncionarioSet" smartFilterId="smartFilterBar" tableType="ResponsiveTable" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Dados de Funcionarios" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding"  editTogglable="true" app:useSmartToggle="true">
 				<smartTable:layoutData>
 					<FlexItemData id="_IDGenFlexItemData1" growFactor="1" baseSize="0%"/>
 				</smartTable:layoutData>
