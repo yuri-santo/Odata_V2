@@ -16,7 +16,12 @@
 				</smartFilterBar:layoutData>
 			</smartFilterBar:SmartFilterBar>
 			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="FuncionarioSet" smartFilterId="smartFilterBar" tableType="ResponsiveTable" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Dados de Funcionarios" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding"  editTogglable="true" app:useSmartToggle="true">
-				<smartTable:layoutData>
+				<smartTable:customToolbar>
+          <Toolbar id="_IDGenToolbar1">
+            <Button id="_IDGenButton" icon="sap-icon://save"></Button>
+          </Toolbar>
+        </smartTable:customToolbar>
+        <smartTable:layoutData>
 					<FlexItemData id="_IDGenFlexItemData1" growFactor="1" baseSize="0%"/>
 				</smartTable:layoutData>
 			</smartTable:SmartTable>
