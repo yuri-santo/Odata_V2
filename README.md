@@ -1,11 +1,11 @@
-# 📘 Cadastro de Funcionário
+# Cadastro de Funcionário
 
 Aplicação Fiori para o **cadastro e manutenção de funcionários** da empresa.  
 Permite visualizar, adicionar, editar e excluir registros de funcionários conectando-se a um serviço **OData ABAP On-Premise**.
 
 ---
 
-## 🧩 Detalhes da Aplicação
+## Detalhes da Aplicação
 
 | Item | Descrição |
 |------|------------|
@@ -27,7 +27,7 @@ Permite visualizar, adicionar, editar e excluir registros de funcionários conec
 
 ---
 
-## 💡 Descrição do Projeto
+## Descrição do Projeto
 
 O sistema **Cadastro de Funcionário** foi desenvolvido para facilitar o gerenciamento dos colaboradores da empresa.  
 Com ele, é possível:
@@ -41,7 +41,7 @@ A aplicação consome um **serviço OData** hospedado em um ambiente **SAP S/4HA
 
 ---
 
-## 🖼️ Telas da Aplicação
+## Telas da Aplicação
 
 ### Tela Inicial
 Lista de funcionários cadastrados, com opções para **adicionar**, **editar** e **excluir**.
