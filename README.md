@@ -46,14 +46,15 @@ A aplicação consome um **serviço OData** hospedado em um ambiente **SAP S/4HA
 ### Tela Inicial
 Lista de funcionários cadastrados, com opções para **adicionar**, **editar** e **excluir**.
 
-![Tela Inicial](./SAP%20tela%20inicial.png)
+<img width="1780" height="797" alt="SAP tela inicial" src="https://github.com/user-attachments/assets/16db5f1a-496e-4aea-a700-2ab72dbdddd7" />
 
 ---
 
 ### Tela de Detalhes
 Tela utilizada para inserir ou editar informações de um funcionário.
 
-![Tela de Detalhes](./Detalhes.png)
+<img width="1778" height="947" alt="Detalhes" src="https://github.com/user-attachments/assets/6825ae43-7545-45f5-8fe9-40c2e0176b59" />
+
 
 ## funcionariocrud
 
