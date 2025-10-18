@@ -36,7 +36,8 @@
       }
     }
   },
-  "sap.ui": {
+
+   "sap.ui": {
     "technology": "UI5",
     "icons": {
       "icon": "",
@@ -52,19 +53,25 @@
       "phone": true
     }
   },
+
   "sap.ui5": {
     "flexEnabled": true,
+
     "dependencies": {
       "minUI5Version": "1.60.0",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "sap.ui.comp": {},
+        "sap.ui.layout": {}
       }
     },
+
     "contentDensities": {
       "compact": true,
       "cozy": true
     },
+
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
@@ -75,9 +82,12 @@
       "": {
         "dataSource": "mainService",
         "preload": true,
-        "settings": {}
+        "settings": {
+          "useBatch": true
+        }
       }
     },
+
     "resources": {
       "css": [
         {
@@ -85,6 +95,14 @@
         }
       ]
     },
+
+    "rootView": {
+      "viewName": "funcionariocrud.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    },
+
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
@@ -97,11 +115,19 @@
       },
       "routes": [
         {
-          "name": "RouteMain",
-          "pattern": ":?query:",
-          "target": [
-            "TargetMain"
-          ]
+          "name": "Main",
+          "pattern": "",
+          "target": ["TargetMain"]
+        },
+        {
+          "name": "Create",
+          "pattern": "create",
+          "target": ["TargetFuncionarioDetail"]
+        },
+        {
+          "name": "Edit",
+          "pattern": "edit/{ID}",
+          "target": ["TargetFuncionarioDetail"]
         }
       ],
       "targets": {
@@ -110,15 +136,18 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "Main",
-          "viewName": "Main"
+          "viewName": "Main",
+          "viewLevel": 1
+        },
+        "TargetFuncionarioDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "FuncionarioDetail",
+          "viewName": "FuncionarioDetail",
+          "viewLevel": 2
         }
       }
-    },
-    "rootView": {
-      "viewName": "funcionariocrud.view.App",
-      "type": "XML",
-      "async": true,
-      "id": "App"
     }
   }
 }

@@ -1,21 +1,59 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Wed Oct 15 2025 10:31:48 GMT-0300 (Brasilia Standard Time)|
-|**App Generator**<br>SAP Fiori Application Generator|
-|**App Generator Version**<br>1.18.6|
-|**Generation Platform**<br>Visual Studio Code|
-|**Template Used**<br>Basic V2|
-|**Service Type**<br>SAP System (ABAP On-Premise)|
-|**Service URL**<br>http://s4hana.ides.com:9222/sap/opu/odata/sap/ZGW_HELLOWORD24_SRV|
-|**Module Name**<br>funcionariocrud|
-|**Application Title**<br>Cadastro de Funcionario|
-|**Namespace**<br>|
-|**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.60.0|
-|**Enable Code Assist Libraries**<br>False|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>False|
+# 📘 Cadastro de Funcionário
+
+Aplicação Fiori para o **cadastro e manutenção de funcionários** da empresa.  
+Permite visualizar, adicionar, editar e excluir registros de funcionários conectando-se a um serviço **OData ABAP On-Premise**.
+
+---
+
+## 🧩 Detalhes da Aplicação
+
+| Item | Descrição |
+|------|------------|
+| **Título da Aplicação** | Cadastro de Funcionário |
+| **Nome do Módulo** | funcionariocrud |
+| **Gerador da App** | SAP Fiori Application Generator |
+| **Versão do Gerador** | 1.18.6 |
+| **Plataforma** | Visual Studio Code |
+| **Template Utilizado** | Basic V2 |
+| **Tipo de Serviço** | SAP System (ABAP On-Premise) |
+| **Service URL** | `http://s4hana.ides.com:9222/sap/opu/odata/sap/ZGW_HELLOWORD24_SRV` |
+| **Tema UI5** | sap_fiori_3 |
+| **Versão UI5** | 1.60.0 |
+| **Namespace** | *(não definido)* |
+| **Assistência de Código (Code Assist)** | Desativado |
+| **TypeScript** | Desativado |
+| **ESLint** | Desativado |
+| **Data de Geração** | Wed Oct 15 2025 10:31:48 GMT-0300 (Brasilia Standard Time) |
+
+---
+
+## 💡 Descrição do Projeto
+
+O sistema **Cadastro de Funcionário** foi desenvolvido para facilitar o gerenciamento dos colaboradores da empresa.  
+Com ele, é possível:
+
+- Cadastrar novos funcionários;
+- Consultar dados existentes;
+- Editar informações como **nome**, **departamento** e **salário**;
+- Excluir registros de forma prática.
+
+A aplicação consome um **serviço OData** hospedado em um ambiente **SAP S/4HANA On-Premise**, permitindo integração direta com dados reais do sistema ERP.
+
+---
+
+## 🖼️ Telas da Aplicação
+
+### Tela Inicial
+Lista de funcionários cadastrados, com opções para **adicionar**, **editar** e **excluir**.
+
+![Tela Inicial](./SAP%20tela%20inicial.png)
+
+---
+
+### Tela de Detalhes
+Tela utilizada para inserir ou editar informações de um funcionário.
+
+![Tela de Detalhes](./Detalhes.png)
 
 ## funcionariocrud
 

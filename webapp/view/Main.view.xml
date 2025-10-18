@@ -3,29 +3,39 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
     xmlns:smartTable="sap.ui.comp.smarttable"
-    xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     height="100%">
 
-  <Page id="page" title="{i18n>title}">
-    <content>
-        <VBox id="_IDGenVBox1" fitContainer="true">
-			<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="FuncionarioSet" persistencyKey="SmartFilter_Explored" basicSearchFieldName="NAME" enableBasicSearch="true" >
-                <smartFilterBar:layoutData>
-					<FlexItemData id="_IDGenFlexItemData" shrinkFactor="0"/>
-				</smartFilterBar:layoutData>
-			</smartFilterBar:SmartFilterBar>
-			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="FuncionarioSet" smartFilterId="smartFilterBar" tableType="ResponsiveTable" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Dados de Funcionarios" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding"  editTogglable="true" app:useSmartToggle="true">
-				<smartTable:customToolbar>
-          <Toolbar id="_IDGenToolbar1">
-            <Button id="_IDGenButton" icon="sap-icon://save"></Button>
-          </Toolbar>
-        </smartTable:customToolbar>
-        <smartTable:layoutData>
-					<FlexItemData id="_IDGenFlexItemData1" growFactor="1" baseSize="0%"/>
-				</smartTable:layoutData>
-			</smartTable:SmartTable>
-		</VBox>
-    </content>
-  </Page>
+   <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="_IDGenVBox" fitContainer="true">
+                <smartFilterBar:SmartFilterBar 
+                    id="smartFilterBar" 
+                    entitySet="FuncionarioSet"
+                    basicSearchFieldName="NAME"
+                    enableBasicSearch="true" />
+
+                <smartTable:SmartTable 
+                    id="LineItemsSmartTable"
+                    entitySet="FuncionarioSet"
+                    smartFilterId="smartFilterBar"
+                    tableType="ResponsiveTable"
+                    useVariantManagement="true"
+                    useTablePersonalisation="true"
+                    header="{i18n>DadosFunc}"
+                    showRowCount="true"
+                    enableAutoBinding="true"
+                    class="sapUiResponsiveContentPadding">
+
+                    <smartTable:customToolbar>
+						<OverflowToolbar id="_IDGenOverflowToolbar1">
+							<Button id="_IDGenButton2" text="Adicionar" icon="sap-icon://add" press=".onAdd"/>
+							<Button id="_IDGenButton3" text="Excluir" icon="sap-icon://delete" press=".onDelete"/>
+						</OverflowToolbar>
+					</smartTable:customToolbar>
+
+
+                </smartTable:SmartTable>
+            </VBox>
+        </content>
+    </Page>
 </mvc:View>
